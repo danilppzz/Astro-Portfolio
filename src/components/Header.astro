@@ -1,9 +1,11 @@
 ---
 import GradientText from "../components/GradientText.astro";
+
+const { title } = Astro.props
 ---
 
 <section>
-  <h1>Welcome, I'm <GradientText>danilppzz</GradientText></h1>
+  <h1>{title}<GradientText>danilppzz</GradientText></h1>
 </section>
 
 <style>

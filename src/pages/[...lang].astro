@@ -1,0 +1,21 @@
+---
+import Header from "../components/Header.astro";
+import Section from "../components/Section.astro";
+import Layout from "../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "en" } }, { params: { lang: "es" } }, { params: { lang: "de" } }];
+}
+const { lang } = Astro.params;
+
+const data = (await import(`./data/${lang}.json`)).default
+---
+
+<Layout title=`danilppzz | ${lang.toUpperCase()}` lang=`${lang}`>
+  <main class="bg-[#08090A] h-screen">
+    <Header title=`${data.title}` />
+    <Section title=`${data.about.title}`>
+      {data.about.description}
+    </Section>
+  </main>
+</Layout>
