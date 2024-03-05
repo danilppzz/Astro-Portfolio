@@ -1,7 +1,7 @@
 ---
 interface Props {
   title: string;
-  lang: string
+  lang: string;
 }
 
 const { title, lang } = Astro.props;
@@ -9,32 +9,40 @@ const { title, lang } = Astro.props;
 
 <!doctype html>
 <html lang=`${lang}`>
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/png" href="/icon.png" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json" />
 
     <meta name="keywords" content="dev, backend, spain" />
     <meta name="description" content="Backend Developer for 2 years." />
     <meta name="author" content="Nombre del autor" />
 
     <meta property="og:title" content="danilppzz" />
-	<meta property="og:description" content="Backend Developer for 2 years."/>
-	<meta property="og:image" content="https://danilppzz.dev/icon.png" />
-	<meta property="og:url" content="https://danilppzz.dev"/>
+    <meta property="og:description" content="Backend Developer for 2 years." />
+    <meta property="og:image" content="https://danilppzz.dev/icon.png" />
+    <meta property="og:url" content="https://danilppzz.dev" />
 
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="danilppzz">
-	<meta name="twitter:description" content="Backend Developer for 2 years.">
-	<meta name="twitter:image" content="https://danilppzz.dev/icon.png">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="danilppzz" />
+    <meta name="twitter:description" content="Backend Developer for 2 years." />
+    <meta name="twitter:image" content="https://danilppzz.dev/icon.png" />
 
-	<title>{title}</title>
- </head>
+    <title>{title}</title>
+  </head>
 
- <body class="bg-[#08090A]">
-	<slot />
- </body>
+  <body class="bg-[#08090A]">
+    <slot />
+  </body>
 </html>
+
+<style>
+  @media only screen and (max-width: 600px) {
+    body {
+      margin: 24px;
+    }
+  }
+</style>
