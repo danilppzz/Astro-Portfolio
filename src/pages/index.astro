@@ -1,14 +1,29 @@
 ---
 import Header from "../components/Header.astro";
 import Section from "../components/Section.astro";
+import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+
+const data = (await import(`./data/en.json`)).default
+
+const listProjects = data.projects.list;
 ---
 
 <Layout title="danilppzz" lang="en">
-  <main class=" bg-[#08090A] h-screen">
-    <Header title="Welcome, I'm " />
-    <Section title="About">
-      A passionate backend developer with an innate love for programming and boundless creativity. My innovative approach and solid technical skills drive me to tackle challenges with enthusiasm. Ready to contribute my passion and expertise to challenging projects.
+  <main class="h-auto">
+    <Header title=`${data.title}` />
+    <Section title=`${data.about.title}`>
+      {data.about.description}
     </Section>
+    <Section title={`${data.projects.title}`}>
+      {listProjects.map((project: any, index: any) => (
+        <Card
+          title={project.title}
+          description={project.description}
+          usage_langs={project.usage_langs}
+          image_url={project.image_url}
+        />
+      ))}
+    </Section>    
   </main>
 </Layout>

@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Section from "../components/Section.astro";
+import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -9,13 +10,26 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 
 const data = (await import(`./data/${lang}.json`)).default
+
+const listProjects = data.projects.list;
+
 ---
 
 <Layout title=`danilppzz | ${lang.toUpperCase()}` lang=`${lang}`>
-  <main class="bg-[#08090A] h-screen">
+  <main class="h-auto">
     <Header title=`${data.title}` />
     <Section title=`${data.about.title}`>
       {data.about.description}
     </Section>
+    <Section title={`${data.projects.title}`}>
+      {listProjects.map((project: any, index: any) => (
+        <Card
+          title={project.title}
+          description={project.description}
+          usage_langs={project.usage_langs}
+          image_url={project.image_url}
+        />
+      ))}
+    </Section>    
   </main>
 </Layout>

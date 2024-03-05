@@ -1,7 +1,24 @@
 {
     "title": "Bienvenido, soy ",
     "about": {
-        "title": "Sobre mi",
-        "description": "Un apasionado desarrollador de backend con un amor innato por la programación y una creatividad ilimitada. Mi enfoque innovador y sólidas habilidades técnicas me impulsan a enfrentar desafíos con entusiasmo. Listo para contribuir con mi pasión y experiencia en proyectos desafiantes."
+        "title": "Acerca de",
+        "description": "Un apasionado desarrollador de backend con un amor innato por la programación y una creatividad sin límites. Mi enfoque innovador y sólidas habilidades técnicas me impulsan a enfrentar desafíos con entusiasmo. Listo para contribuir con mi pasión y experiencia en proyectos desafiantes."
+    },
+    "projects": {
+        "title": "Proyectos",
+        "list": [
+            {
+                "title": "Link Shorter",
+                "description": "Esta es una aplicación completa de acortamiento de enlaces en el backend con renderizado en el lado del servidor y Tailwind CSS, incluye una base de datos SQLite para guardar los enlaces.",
+                "usage_langs": ["JavaScript", "EJS"],
+                "image_url": ""
+            },
+            {
+                "title": "Hono Badge API",
+                "description": "Esta es una API de insignias para crear SVG con texto personalizado, color y borde para POSTearlo en la documentación de tus proyectos y hacer que luzca mejor.",
+                "usage_langs": ["TypeScript", "Hono"],
+                "image_url": ""
+            }
+        ]
     }
 }
