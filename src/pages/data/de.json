@@ -11,13 +11,13 @@
                 "title": "Link Shorter",
                 "description": "Dies ist eine vollständige Backend-App zum Verkürzen von Links mit serverseitigem Rendern und Tailwind CSS. Sie enthält eine SQLite-Datenbank zum Speichern der Links.",
                 "usage_langs": ["JavaScript", "EJS"],
-                "image_url": ""
+                "url": "https://github.com/danilppzz/Link-Shorter"
             },
             {
                 "title": "Badge API",
                 "description": "Dies ist eine Badge-API zum Erstellen von SVG mit benutzerdefiniertem Text, Farbe und Rand, um es in die Dokumentation Ihrer Projekte zu POSTen und es besser aussehen zu lassen.",
                 "usage_langs": ["TypeScript", "Hono"],
-                "image_url": ""
+                "url": "https://github.com/danilppzz/Hono-Badge-API"
             }
         ]
     }

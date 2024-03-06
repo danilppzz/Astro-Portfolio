@@ -11,13 +11,13 @@
                 "title": "Link Shorter",
                 "description": "This is a full backend link shorter app with server side render and tailwind css, include sqlite database to save the links.",
                 "usage_langs": ["JavaScript", "EJS"],
-                "image_url": ""
+                "url": "https://github.com/danilppzz/Link-Shorter"
             },
             {
                 "title": "Badge API",
                 "description": "This is a badge api for make svg with custom text, color and border to POST it into your projects docs and make it look better.",
                 "usage_langs": ["TypeScript", "Hono"],
-                "image_url": ""
+                "url": "https://github.com/danilppzz/Hono-Badge-API"
             }
         ]
     }

@@ -1,5 +1,5 @@
 ---
-const { title, description, usage_langs, image_url } = Astro.props;
+const { title, description, usage_langs, url } = Astro.props;
 ---
 
 <div class="card">
@@ -7,7 +7,7 @@ const { title, description, usage_langs, image_url } = Astro.props;
     <img class=" w-[250px] h-auto" src=`${image_url}` alt=`${title}` />
   </div> -->
   <header class="flex justify-between">
-    {title && <h2 class="">{title}</h2>}
+    {title && <h2 class=" hover:underline cursor-pointer"><a href={url} target="_blank">{title}</a></h2>}
     <ul class="flex space-x-2">
       {
         usage_langs.map((lang: any, index: any) => (
