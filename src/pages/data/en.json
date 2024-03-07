@@ -17,7 +17,7 @@
                 "title": "Badge API",
                 "description": "This is a badge api for make svg with custom text, color and border to POST it into your projects docs and make it look better.",
                 "usage_langs": ["TypeScript", "Hono"],
-                "url": "https://github.com/danilppzz/Hono-Badge-API"
+                "url": "https://hono-badge-api.vercel.app/"
             }
         ]
     }

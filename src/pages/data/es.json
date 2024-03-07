@@ -17,7 +17,7 @@
                 "title": "Badge API",
                 "description": "Esta es una API de insignias para crear SVG con texto personalizado, color y borde para POSTearlo en la documentación de tus proyectos y hacer que luzca mejor.",
                 "usage_langs": ["TypeScript", "Hono"],
-                "url": "https://github.com/danilppzz/Hono-Badge-API"
+                "url": "https://hono-badge-api.vercel.app/"
             }
         ]
     }

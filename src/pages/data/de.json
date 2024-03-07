@@ -17,7 +17,7 @@
                 "title": "Badge API",
                 "description": "Dies ist eine Badge-API zum Erstellen von SVG mit benutzerdefiniertem Text, Farbe und Rand, um es in die Dokumentation Ihrer Projekte zu POSTen und es besser aussehen zu lassen.",
                 "usage_langs": ["TypeScript", "Hono"],
-                "url": "https://github.com/danilppzz/Hono-Badge-API"
+                "url": "https://hono-badge-api.vercel.app/"
             }
         ]
     }
