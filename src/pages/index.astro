@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Section from "../components/Section.astro";
+import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -14,6 +15,11 @@ const listProjects = data.projects.list;
     <Header title=`${data.title}` />
     <Section title=`${data.about.title}`>
       {data.about.description}
+    </Section>
+    <Section>
+      <Button loc="https://github.com/danilppzz">
+        Github
+      </Button>
     </Section>
     <Section title={`${data.projects.title}`}>
       {listProjects.map((project: any, index: any) => (

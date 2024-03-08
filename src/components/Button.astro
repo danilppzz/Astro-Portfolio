@@ -1,0 +1,11 @@
+---
+const { loc } = Astro.props;
+---
+
+<a
+href={loc}
+target="_blank"
+  class={"bg-[#292929] mr-4 py-2 px-4 border-2 border-[#3e3e3e] rounded-full text-white items-center text-base hover:border-[#fff] cursor-pointer transition"}
+>
+  <slot />
+</a>
