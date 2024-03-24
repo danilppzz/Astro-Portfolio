@@ -4,6 +4,7 @@ import Section from "../components/Section.astro";
 import Button from "../components/Button.astro";
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
+import Tip from "../components/Tip.astro";
 
 const data = (await import(`./data/en.json`)).default
 
@@ -20,6 +21,7 @@ const listProjects = data.projects.list;
       <Button loc="https://github.com/danilppzz">
         Github
       </Button>
+      <!-- <Tip text={"600cv / 1.778kg / v6"} tip={"Stats"} posx="200" posy="1490" /> -->
     </Section>
     <Section title={`${data.projects.title}`}>
       {listProjects.map((project: any, index: any) => (

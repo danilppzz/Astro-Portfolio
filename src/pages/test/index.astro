@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Tip from "../../components/Tip.astro";
+---
+
+<Layout title="test" lang="en">
+  <div class="relative h-screen">
+    <!-- Imagen de fondo -->
+    <img src="bg.jpg" alt="Imagen de fondo" class="absolute inset-0 w-full h-full object-cover" />
+
+    <!-- Degradado -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#363636]">
+      <Tip text={"Nissang GT-R 35 Nismo"} tip={"Tip"} posx="40" posy="1390" />
+      <Tip text={"600cv / 1.778kg / v6"} tip={"Stats"} posx="200" posy="1490" />
+    </div>
+  </div>
+</Layout>

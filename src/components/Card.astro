@@ -11,7 +11,7 @@ const { title, description, usage_langs, url } = Astro.props;
     <ul class="flex space-x-2">
       {
         usage_langs.map((lang: any, index: any) => (
-          <li class=" bg-[#363636] h-[26px] bg-opacity-80 m-200 px-2 rounded items-center">{lang}</li>
+          <li class=" bg-[#363636] h-[26px] m-200 px-2 rounded items-center">{lang}</li>
         ))
       }
     </ul>
@@ -23,6 +23,7 @@ const { title, description, usage_langs, url } = Astro.props;
 
 <style>
   .card {
+    background-color: #09090bbb;
     padding: 1rem;
     border: 0.1px solid white;
     box-shadow: 0.6rem 0.6rem #393939;
